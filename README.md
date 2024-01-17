@@ -41,6 +41,8 @@ En una segunda instancia, se desarrollaron tres Key Performance Indicators (KPIs
 
    Se calcularon las tasas de homicidios en siniestros viales para ambos semestres, resultando en una disminución del 23.86%. Esta reducción, considerablemente superior al objetivo del 10% establecido como KPI, se presenta visualmente a través de gráficos que destacan la significativa mejora en la seguridad vial durante el periodo analizado.
 
+   *Pobación de CABA obtenida de --> https://www.argentina.gob.ar/caba#:~:text=Datos%20Jurisdiccionales%20Superficie%3A%20200%20Km%C2%B2.%20Poblaci%C3%B3n%3A%203.121.707%20habitantes,precipitaciones%20resultan%20ser%20m%C3%A1s%20abundantes%20en%20%C3%A9poca%20estival.
+
 2. **Reducción del 7% en la cantidad de accidentes mortales de motociclistas en CABA respecto al año anterior.**
 
    La evaluación de la evolución de los accidentes mortales con víctimas en moto reveló un aumento del 70.37%, indicando que no se alcanzó la reducción del 7% propuesta como KPI. La presentación gráfica enfatiza esta discrepancia, resaltando la necesidad de estrategias específicas para abordar los desafíos asociados a la seguridad de los motociclistas en la Ciudad Autónoma de Buenos Aires.
