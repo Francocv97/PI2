@@ -2,20 +2,19 @@
 
 ## Introducción
 
-Este proyecto tiene como objetivo abordar la problemática de los siniestros viales en la Ciudad Autónoma de Buenos Aires (CABA) mediante un exhaustivo análisis de datos. La información utilizada abarca diversas variables, como fechas de los accidentes, ubicación geográfica, participantes y otros elementos relevantes que proporcionan una visión integral del fenómeno.
+Este proyecto se centra en abordar la problemática de los siniestros viales en la Ciudad Autónoma de Buenos Aires (CABA) a través de un análisis exhaustivo de datos. La información utilizada comprende diversas variables, incluyendo las fechas de los accidentes, la ubicación geográfica, los participantes y otros elementos relevantes, proporcionando así una visión integral del fenómeno.
 
-Se llevó a cabo un análisis exploratorio de datos (EDA) utilizando el archivo en formato .xlsx, originado en Excel, el cual fue procesado con dataframes mediante la biblioteca pandas y otras librerías para realizar descripciones estadísticas respaldadas con gráficos visuales.
+Se ha llevado a cabo un Análisis Exploratorio de Datos (EDA) utilizando un archivo en formato .xlsx, originado en Excel. Este archivo fue procesado con dataframes utilizando la biblioteca pandas, entre otras, para realizar descripciones estadísticas respaldadas con representaciones gráficas visuales.
 
-Además, se ha desarrollado un dashboard dinámico utilizando Power BI, que incluye los tres KPIs solicitados por Henry para una presentación visual y accesible de los resultados.
+Además, se ha desarrollado un dashboard dinámico utilizando Power BI. Este dashboard incluye los tres KPIs solicitados por Henry, permitiendo una presentación visual y accesible de los resultados.
 
-Por último, se presenta este README como un informe detallado que proporciona información adicional sobre el proyecto.
+Finalmente, este README se presenta como un informe detallado que proporciona información adicional sobre el proyecto, sirviendo como una guía completa para entender nuestros hallazgos y metodología.
 
-
-## Desarrollo
-
-### Contexto
+## Contexto
 
 En Argentina, los siniestros viales causan aproximadamente 4,000 muertes anuales. El Observatorio de Movilidad y Seguridad Vial (OMSV) busca contribuir a la reducción de este problema a través de un proyecto de análisis de datos. El dataset utilizado abarca información sobre homicidios en siniestros viales en Buenos Aires entre los años 2016 y 2021.
+
+## Desarrollo
 
 ### EDA (Exploratory Data Analysis) - Python
 
@@ -25,9 +24,11 @@ La detección de valores atípicos fue especialmente relevante, y su impacto se 
 
 En el desarrollo del EDA, se le dio especial énfasis al enfoque temporal, aprovechando la riqueza de información proporcionada en el archivo de origen. Este incluía detalles precisos como la fecha exacta del siniestro, año, mes, día y hora. Se realizaron análisis detallados en todas estas temporalidades, permitiendo una comprensión profunda de la dinámica temporal de los siniestros viales. Además, se abstrajo la información en relación con las estaciones del año (verano, otoño, invierno, primavera) para capturar posibles patrones estacionales que pudieran influir en la incidencia de los accidentes.
 
-La exploración de variables clave, como comuna y tipo de calle, fue respaldada por gráficos de barras que facilitaron la identificación de patrones significativos. Se resaltaron 5 comunas específicas (1, 4, 9, 8 y 7) con un número notablemente superior de accidentes viales en comparación con el resto de la muestra. En el caso de los tipos de calle, la observación de que "AVENIDA" superaba significativamente a otras categorías como "CALLE", "AUTOPISTA" o "GRAL PAZ" fue especialmente reveladora, desafiando posibles suposiciones basadas en el flujo de vehículos.
+La exploración de variables clave, como comuna y tipo de calle, fue respaldada por gráficos de barras que facilitaron la identificación de patrones significativos. Se resaltaron 5 comunas específicas (1, 4, 9, 8 y 7) con un número notablemente superior de accidentes viales en comparación con el resto de la muestra. En el caso de los tipos de calle, la observación de que “AVENIDA” superaba significativamente a otras categorías como “CALLE”, “AUTOPISTA” o “GRAL PAZ” fue especialmente reveladora, desafiando posibles suposiciones basadas en el flujo de vehículos.
 
-Finalmente, el análisis detallado de los participantes, tanto acusados como víctimas, destacó la importancia de categorías específicas. Autos, pasajeros y carga emergieron como los principales causantes de accidentes viales mortales. Se notó la vulnerabilidad de motociclistas y peatones, mostrando una pequeña diferencia entre ambos, lo cual se alineó con su mayor exposición al contacto directo con el entorno durante colisiones o atropellos. Estos hallazgos subrayan la importancia de considerar múltiples perspectivas al abordar la seguridad vial en la Ciudad Autónoma de Buenos Aires.
+Finalmente, el análisis detallado de los participantes, tanto acusados como víctimas, destacó la importancia de categorías específicas. Autos, pasajeros y carga emergieron como los principales causantes de accidentes viales mortales. Se notó la vulnerabilidad de motociclistas y peatones, mostrando una pequeña diferencia entre ambos, lo cual se alineó con su mayor exposición al contacto directo con el entorno durante colisiones o atropellos.
+
+Estos hallazgos subrayan la importancia de considerar múltiples perspectivas al abordar la seguridad vial en la Ciudad Autónoma de Buenos Aires. Específicamente, las intervenciones deben centrarse en mejorar la seguridad de los usuarios de la vía más vulnerables, como los peatones y los motociclistas, y en las áreas con una alta concentración de accidentes. Estos resultados proporcionan una base sólida para futuras investigaciones y la implementación de medidas de seguridad vial más efectivas.
 
 ### Dashboard - Power Bi
 
@@ -35,21 +36,21 @@ El diseño del dashboard se concibió con una orientación clara hacia la usabil
 
 En una segunda instancia, se desarrollaron tres Key Performance Indicators (KPIs), dos especificados por Henry y uno elegido de manera deliberada. Estos KPIs fueron representados gráficamente y comparados según criterios específicos:
 
-### Evaluación de KPIs - Mejora de la Seguridad Vial en CABA
+#### Evaluación de KPIs - Mejora de la Seguridad Vial en CABA
 
-1. **Reducción del 10% en la tasa de homicidios en siniestros viales en CABA comparando los últimos seis meses con el semestre anterior.**
+1. **Reducción del 10% en la tasa de homicidios en siniestros viales en CABA comparando los últimos seis meses con el semestre anterior (Año 2021).**
 
-   Se calcularon las tasas de homicidios en siniestros viales para ambos semestres, resultando en una disminución del 23.86%. Esta reducción, considerablemente superior al objetivo del 10% establecido como KPI, se presenta visualmente a través de gráficos que destacan la significativa mejora en la seguridad vial durante el periodo analizado.
+   Tras calcular las tasas de homicidios en siniestros viales para ambos semestres, se observó una disminución del 23.86%. Esta reducción, que supera considerablemente el objetivo del 10% establecido como KPI, se ilustra a través de gráficos que resaltan la mejora significativa en la seguridad vial durante el periodo analizado.
 
-   *Pobación de CABA obtenida de --> https://www.argentina.gob.ar/caba#:~:text=Datos%20Jurisdiccionales%20Superficie%3A%20200%20Km%C2%B2.%20Poblaci%C3%B3n%3A%203.121.707%20habitantes,precipitaciones%20resultan%20ser%20m%C3%A1s%20abundantes%20en%20%C3%A9poca%20estival.
+   *La población de CABA se obtuvo de --> https://www.argentina.gob.ar/caba#:~:text=Datos%20Jurisdiccionales%20Superficie%3A%20200%20Km%C2%B2.%20Poblaci%C3%B3n%3A%203.121.707%20habitantes,precipitaciones%20resultan%20ser%20m%C3%A1s%20abundantes%20en%20%C3%A9poca%20estival.
 
-2. **Reducción del 7% en la cantidad de accidentes mortales de motociclistas en CABA respecto al año anterior.**
+2. **Reducción del 7% en la cantidad de accidentes mortales de motociclistas en CABA respecto al año anterior (Año 2021-2020).**
 
-   La evaluación de la evolución de los accidentes mortales con víctimas en moto reveló un aumento del 70.37%, indicando que no se alcanzó la reducción del 7% propuesta como KPI. La presentación gráfica enfatiza esta discrepancia, resaltando la necesidad de estrategias específicas para abordar los desafíos asociados a la seguridad de los motociclistas en la Ciudad Autónoma de Buenos Aires.
+   La evaluación de la evolución de los accidentes mortales con víctimas en moto reveló un aumento del 70.37%, lo que indica que no se alcanzó la reducción del 7% propuesta como KPI. La presentación gráfica enfatiza esta discrepancia y resalta la necesidad de estrategias específicas para abordar los desafíos asociados a la seguridad de los motociclistas en la Ciudad Autónoma de Buenos Aires.
 
 3. **Reducción de un 10% en el número de accidentes mortales con acusados en auto, del año 2021 en comparación con el año 2020.**
 
-   La evolución de los accidentes mortales con acusados en auto mostró un aumento del 24%, incumpliendo la meta del 10% de reducción establecida como KPI. La presentación gráfica proporciona una visión detallada de este incremento, subrayando la importancia de estrategias específicas para mitigar los riesgos asociados a los accidentes mortales con acusados en auto.
+   La evolución de los accidentes mortales con acusados en auto mostró un aumento del 24%, lo que indica que no se cumplió la meta del 10% de reducción establecida como KPI. La presentación gráfica proporciona una visión detallada de este incremento y subraya la importancia de estrategias específicas para mitigar los riesgos asociados a los accidentes mortales con acusados en auto.
 
 Estos KPIs y sus análisis detallados resaltan la necesidad imperante de evaluar y ajustar estrategias específicas, guiando así futuras acciones en la mejora continua de la seguridad vial en la Ciudad Autónoma de Buenos Aires.
 
